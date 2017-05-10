@@ -5,7 +5,6 @@
     using UI;
     using Models.Factories;
     using Models;
-    using System.Collections.Generic;
 
     public static class StartUp
     {
@@ -15,6 +14,7 @@
             IWriter writer = new ConsoleWriter();
             IFactoryCleansingCenter factoryClearsinCenter = new CleansingCenterFactory();
             IFactoryAdoptedCenter factoryAdoptingCenter = new AdoptedCenterFactory();
+            System.Console.WriteLine("Proba");
             IFactoryDog factoryDog = new DogFactory();
             IFactoryCat factoryCat = new CatFactory();
             IDataBaseCenter dataBase = new DataBaseCenter();
